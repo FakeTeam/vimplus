@@ -16,3 +16,10 @@
 
 " 卸载/禁用~/.vimrc里的默认插件
 " UnPlug 'chxuan/prepare-code'
+
+Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'}
+Plug 'vim-utils/vim-man'
+Plug 'bronson/vim-trailing-whitespace'
+Plug 'vim-scripts/DoxygenToolkit.vim'
+Plug 'vim-autoformat/vim-autoformat'
+

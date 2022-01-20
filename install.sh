@@ -186,7 +186,7 @@ function compile_vim_on_ubuntu()
 {
     sudo apt-get install -y libncurses5-dev libncurses5 libgnome2-dev libgnomeui-dev \
         libgtk2.0-dev libatk1.0-dev libbonoboui2-dev \
-        libcairo2-dev libx11-dev libxpm-dev libxt-dev python-dev python3-dev ruby-dev lua5.1 lua5.1-dev
+        libcairo2-dev libx11-dev libxpm-dev libxt-dev  python3-dev ruby-dev lua5.1 lua5.1-dev
 
     rm -rf ~/vim82
     git clone https://gitee.com/chxuan/vim82.git ~/vim82
@@ -341,9 +341,9 @@ function install_prepare_software_on_ubuntu()
 function install_prepare_software_on_ubuntu_like()
 {
     sudo apt-get update
-    sudo apt-get install -y cmake build-essential python python-dev python3-dev fontconfig libfile-next-perl ack-grep git
+    sudo apt-get install -y cmake build-essential  python3-dev fontconfig libfile-next-perl ack-grep git
     sudo apt-get install -y universal-ctags || sudo apt-get install -y exuberant-ctags
-    compile_vim_on_ubuntu
+    # compile_vim_on_ubuntu
 }
 
 # 安装debian必备软件
@@ -481,7 +481,7 @@ function install_fonts_on_linux()
 # 安装vim插件
 function install_vim_plugin()
 {
-    vim -c "PlugInstall" -c "q" -c "q"
+    vim  -c "PlugInstall" -c "q" -c "q"
 }
 
 # 安装ycm插件
@@ -609,9 +609,9 @@ function begin_install_vimplus()
 {
     copy_files
     install_fonts_on_linux
-    install_ycm
+    # install_ycm
     install_vim_plugin
-    print_logo
+    # print_logo
 }
 
 # 在ubuntu上安装vimplus
