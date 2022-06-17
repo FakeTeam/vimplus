@@ -130,7 +130,7 @@ Plug 'chxuan/prepare-code'
 Plug 'chxuan/vim-buffer'
 Plug 'chxuan/vimplus-startify'
 Plug 'preservim/tagbar'
-Plug 'ycm-core/YouCompleteMe',{ 'do': 'git submodule update --init --recursive && python3 install.py --clangd-completer'  }
+Plug 'ycm-core/YouCompleteMe',{ 'do': 'git submodule update --init --recursive && python3 install.py --clangd-completer --rust-completer'  }
 Plug 'Yggdroot/LeaderF'
 Plug 'mileszs/ack.vim'
 Plug 'easymotion/vim-easymotion'
